@@ -1,0 +1,86 @@
+solid thinflatplate
+ facet normal 0.866025 0 -0.5
+  outer loop
+   vertex 0.00433263 0.01 -0.00249567
+   vertex 0.00433263 -0.01 -0.00249567
+   vertex 0.00432763 0.01 -0.00250433
+  endloop
+ endfacet
+ facet normal 0.866025 0 -0.5
+  outer loop
+   vertex 0.00432763 0.01 -0.00250433
+   vertex 0.00433263 -0.01 -0.00249567
+   vertex 0.00432763 -0.01 -0.00250433
+  endloop
+ endfacet
+ facet normal 0 1 0
+  outer loop
+   vertex -0.00432763 0.01 0.00250433
+   vertex 0.00433263 0.01 -0.00249567
+   vertex -0.00433263 0.01 0.00249567
+  endloop
+ endfacet
+ facet normal 0 1 0
+  outer loop
+   vertex -0.00433263 0.01 0.00249567
+   vertex 0.00433263 0.01 -0.00249567
+   vertex 0.00432763 0.01 -0.00250433
+  endloop
+ endfacet
+ facet normal -0.866025 0 0.5
+  outer loop
+   vertex -0.00432763 -0.01 0.00250433
+   vertex -0.00432763 0.01 0.00250433
+   vertex -0.00433263 -0.01 0.00249567
+  endloop
+ endfacet
+ facet normal -0.866025 0 0.5
+  outer loop
+   vertex -0.00433263 -0.01 0.00249567
+   vertex -0.00432763 0.01 0.00250433
+   vertex -0.00433263 0.01 0.00249567
+  endloop
+ endfacet
+ facet normal -0 -1 0
+  outer loop
+   vertex 0.00433263 -0.01 -0.00249567
+   vertex -0.00432763 -0.01 0.00250433
+   vertex 0.00432763 -0.01 -0.00250433
+  endloop
+ endfacet
+ facet normal 0 -1 0
+  outer loop
+   vertex 0.00432763 -0.01 -0.00250433
+   vertex -0.00432763 -0.01 0.00250433
+   vertex -0.00433263 -0.01 0.00249567
+  endloop
+ endfacet
+ facet normal 0.5 0 0.866025
+  outer loop
+   vertex -0.00432763 0.01 0.00250433
+   vertex -0.00432763 -0.01 0.00250433
+   vertex 0.00433263 0.01 -0.00249567
+  endloop
+ endfacet
+ facet normal 0.5 0 0.866025
+  outer loop
+   vertex 0.00433263 0.01 -0.00249567
+   vertex -0.00432763 -0.01 0.00250433
+   vertex 0.00433263 -0.01 -0.00249567
+  endloop
+ endfacet
+ facet normal -0.5 0 -0.866025
+  outer loop
+   vertex -0.00433263 -0.01 0.00249567
+   vertex -0.00433263 0.01 0.00249567
+   vertex 0.00432763 -0.01 -0.00250433
+  endloop
+ endfacet
+ facet normal -0.5 0 -0.866025
+  outer loop
+   vertex 0.00432763 -0.01 -0.00250433
+   vertex -0.00433263 0.01 0.00249567
+   vertex 0.00432763 0.01 -0.00250433
+  endloop
+ endfacet
+endsolid thinflatplate

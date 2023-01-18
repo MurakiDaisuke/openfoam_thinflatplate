@@ -1,0 +1,110 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  v2206                                 |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      meshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+surfaceFile "thinflatplate.fms";
+
+//minCellSize 0.00001;
+
+maxCellSize 0.02;
+
+boundaryCellSize 0.02;
+
+objectRefinements
+{
+  wake
+  {
+    cellSize 0.003;
+    type box;
+    centre (0.125 0 0);
+    lengthX 0.3;
+    lengthY 0.04;
+    lengthZ 0.03;
+  }
+}
+
+localRefinement
+{
+  thinflatplate
+  {
+    additionalRefinementLevels 6;
+    refinementThickness 0.0005;
+  }
+}
+
+boundaryLayers
+{
+
+    patchBoundaryLayers
+    {
+      thinflatplate
+      {
+        nLayers 3;
+
+        thicknessRatio 1.1;
+
+        maxFirstLayerThickness 0.0001;
+      }
+    }
+}
+
+renameBoundary
+{
+  newPatchNames
+  {
+    thinflatplate
+    {
+      newName flatplate;
+      type wall;
+    }
+
+    xMin
+    {
+      newName inlet;
+      type patch;
+    }
+
+    xMax
+    {
+      newName outlet;
+      type patch;
+    }
+    yMin
+    {
+      newName sidewall;
+      type wall;
+    }
+
+    yMax
+    {
+      newName sidewall;
+      type wall;
+    }
+
+    zMin
+    {
+      newName lowerwall;
+      type patch;
+    }
+
+    zMax
+    {
+      newName upperwall;
+      type wall;
+    }
+  }
+}
+
+// ************************************************************************* //

@@ -1,0 +1,74 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2206                                  |
+|   \\  /    A nd           | Website:  www.openfoam.com                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    arch        "LSB;label=32;scalar=64";
+    class       dictionary;
+    location    "constant/polyMesh";
+    object      meshMetaDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+surfaceFile     "thinflatplate_30.fms";
+
+surfaceMeta
+{
+    nPoints         16;
+    nFacets         24;
+    nPatches        7;
+    nFeatureEdges   24;
+    patches
+    {
+        thinflatplate
+        {
+            type            empty;
+            nFacets         12;
+        }
+        xMin
+        {
+            type            empty;
+            nFacets         2;
+        }
+        xMax
+        {
+            type            empty;
+            nFacets         2;
+        }
+        yMin
+        {
+            type            empty;
+            nFacets         2;
+        }
+        yMax
+        {
+            type            empty;
+            nFacets         2;
+        }
+        zMin
+        {
+            type            empty;
+            nFacets         2;
+        }
+        zMax
+        {
+            type            empty;
+            nFacets         2;
+        }
+    }
+    pointSubsets
+    {
+    }
+    facetSubsets
+    {
+    }
+    featureEdgeSubsets
+    {
+    }
+}
